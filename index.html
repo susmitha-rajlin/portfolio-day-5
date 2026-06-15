@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Susmitha Rajlin Portfolio</title>
+
 <link rel="stylesheet" href="style.css">
 
+<!-- EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
 </head>
+
 <body>
 
 <header>
@@ -33,82 +37,48 @@
     </ul>
 </header>
 
-
+<!-- HOME -->
 <section id="home">
     <h2>Welcome</h2>
-    <p>
-        Welcome to my personal portfolio website.
-        Here you can explore my skills, projects and activities.
-    </p>
+    <p>Welcome to my personal portfolio website. Here you can explore my skills, projects and activities.</p>
 </section>
 
-
-
+<!-- ABOUT -->
 <section id="about">
     <h2>About Me</h2>
-
-    <p>
-        I am interested in Web Development and Artificial Intelligence.
-        I enjoy building websites and learning new technologies.
-    </p>
+    <p>I am interested in Web Development and Artificial Intelligence. I enjoy building websites and learning new technologies.</p>
 </section>
 
-
-
+<!-- SKILLS -->
 <section id="skills">
-
     <h2>Skills</h2>
 
     <div class="skills-container">
 
         <div class="skill-card">
             <h3>HTML</h3>
-            <div class="bar">
-                <div class="fill" data-width="90%"></div>
-            </div>
+            <div class="bar"><div class="fill" data-width="90%"></div></div>
         </div>
 
         <div class="skill-card">
             <h3>CSS</h3>
-            <div class="bar">
-                <div class="fill" data-width="85%"></div>
-            </div>
+            <div class="bar"><div class="fill" data-width="85%"></div></div>
         </div>
 
         <div class="skill-card">
             <h3>JavaScript</h3>
-            <div class="bar">
-                <div class="fill" data-width="80%"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>Tailwind CSS</h3>
-            <div class="bar">
-                <div class="fill" data-width="75%"></div>
-            </div>
+            <div class="bar"><div class="fill" data-width="80%"></div></div>
         </div>
 
         <div class="skill-card">
             <h3>React</h3>
-            <div class="bar">
-                <div class="fill" data-width="70%"></div>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>Node.js</h3>
-            <div class="bar">
-                <div class="fill" data-width="65%"></div>
-            </div>
+            <div class="bar"><div class="fill" data-width="70%"></div></div>
         </div>
 
     </div>
-
 </section>
 
-
-
+<!-- PROJECTS -->
 <section id="projects">
 
     <h2>Projects</h2>
@@ -122,223 +92,126 @@
 
     <div class="projects-container">
 
-        
-
         <div class="project frontend">
-
-            <img src="https://via.placeholder.com/300x180"
-                 alt="Landing Page">
-
+            <img src="https://via.placeholder.com/300x180">
             <h3>Landing Page</h3>
-
             <p>Responsive Website Design</p>
-
             <button class="viewProject"
-                    data-title="Landing Page"
-                    data-image="https://via.placeholder.com/500x250"
-                    data-desc="Responsive Landing Page built using HTML and CSS."
-                    data-tech="HTML, CSS"
-                    data-link="https://example.com">
-
-                
-
+                data-title="Landing Page"
+                data-image="https://via.placeholder.com/500x250"
+                data-desc="Responsive Landing Page built using HTML and CSS."
+                data-tech="HTML, CSS"
+                data-link="https://example.com">
+                View Project
             </button>
-
         </div>
-
-        
 
         <div class="project backend">
-
-            <img src="https://via.placeholder.com/300x180"
-                 alt="Student Management">
-
+            <img src="https://via.placeholder.com/300x180">
             <h3>Student Management</h3>
-
             <p>CRUD Application</p>
-
             <button class="viewProject"
-                    data-title="Student Management"
-                    data-image="https://via.placeholder.com/500x250"
-                    data-desc="Student Management System using JavaScript."
-                    data-tech="HTML, CSS, JavaScript"
-                    data-link="https://example.com">
-
-                
-
+                data-title="Student Management"
+                data-image="https://via.placeholder.com/500x250"
+                data-desc="Student Management System using JavaScript."
+                data-tech="HTML, CSS, JS"
+                data-link="https://example.com">
+                View Project
             </button>
-
         </div>
 
-        
-
         <div class="project ai">
-
-            <img src="https://via.placeholder.com/300x180"
-                 alt="AI Chatbot">
-
+            <img src="https://via.placeholder.com/300x180">
             <h3>AI Chatbot</h3>
-
             <p>Basic AI Assistant</p>
-
             <button class="viewProject"
-                    data-title="AI Chatbot"
-                    data-image="https://via.placeholder.com/500x250"
-                    data-desc="Simple AI Chatbot project."
-                    data-tech="AI, JavaScript"
-                    data-link="https://example.com">
-
-            
-
+                data-title="AI Chatbot"
+                data-image="https://via.placeholder.com/500x250"
+                data-desc="Simple AI Chatbot project."
+                data-tech="AI, JS"
+                data-link="https://example.com">
+                View Project
             </button>
-
         </div>
 
     </div>
-
 </section>
 
+<!-- TESTIMONIALS -->
 <section id="testimonials">
 
     <h2>Testimonials</h2>
 
     <div class="testimonial">
-
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya">
-
+        <img src="https://randomuser.me/api/portraits/women/44.jpg">
         <h3>Priya</h3>
-
         <p>Frontend Developer</p>
-
         <p>Excellent work and great attention to detail.</p>
-
-    </div>
-
-    <div class="testimonial">
-
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Arun">
-
-        <h3>Arun</h3>
-
-        <p>UI Designer</p>
-
-        <p>Creative and hardworking developer.</p>
-
-    </div>
-
-    <div class="testimonial">
-
-        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Divya">
-
-        <h3>Divya</h3>
-
-        <p>Project Manager</p>
-
-        <p>Always completes tasks on time.</p>
-
     </div>
 
 </section>
 
-<section id="gallery">
-
-</section>
-
+<!-- TODO -->
 <section id="todo">
-
     <h2>My To-Do List</h2>
 
-    <input type="text"
-           id="taskInput"
-           placeholder="Add New Task">
-
-    <button id="addBtn">
-        
-    </button>
+    <input type="text" id="taskInput" placeholder="Add New Task">
+    <button id="addBtn">Add</button>
 
     <ul id="taskList"></ul>
-
     <p id="taskCount"></p>
-
 </section>
 
-
-
+<!-- WEATHER -->
 <section id="weather">
 
     <h2>Live Weather</h2>
 
-    <input type="text"
-           id="cityInput"
-           placeholder="Enter City Name">
+    <input type="text" id="cityInput" placeholder="Enter City Name">
 
-    <button id="getWeatherBtn">
-        
-    </button>
+    <button id="getWeatherBtn">Get Weather</button>
 
     <div id="loading" class="spinner"></div>
+
     <div id="weatherResult">
-
         <h3 id="cityName"></h3>
-
         <p id="temp"></p>
-
         <p id="description"></p>
-
         <p id="humidity"></p>
-
     </div>
 
 </section>
 
-
-
+<!-- CONTACT (FIXED FOR EMAILJS) -->
 <section id="contact">
 
     <h2>Contact Me</h2>
 
     <form id="contactForm">
 
-        <input type="text"
-               id="name"
-               placeholder="Your Name"
-               required>
+        <input type="text" id="name" placeholder="Your Name" required>
 
-        <input type="email"
-               id="email"
-               placeholder="Your Email"
-               required>
+        <input type="email" id="email" placeholder="Your Email" required>
 
-        <textarea id="message"
-                  rows="5"
-                  placeholder="Your Message"
-                  required></textarea>
+        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
 
-       <button type="submit" id="submitBtn">
-    Send Message
-</button>
+        <button type="submit" id="submitBtn">Send Message</button>
+
         <p id="statusMessage"></p>
 
     </form>
 
 </section>
 
-
-
+<!-- FOOTER -->
 <footer>
-
     <p id="clock"></p>
-
 </footer>
 
+<!-- TOP BUTTON -->
+<button id="topBtn">Top</button>
 
-
-<button id="topBtn">
-    
-</button>
-
-
-
+<!-- MODAL -->
 <div id="projectModal" class="modal">
 
     <div class="modal-content">
@@ -347,35 +220,25 @@
 
         <h2 id="modalTitle"></h2>
 
-        <img id="modalImage"
-             src=""
-             alt="Project Image">
+        <img id="modalImage">
 
         <p id="modalDesc"></p>
 
         <p id="modalTech"></p>
 
-        <a id="modalLink"
-           href="#"
-           target="_blank">
-
-            
-
-        </a>
+        <a id="modalLink" target="_blank">Visit Project</a>
 
     </div>
 
 </div>
+
+<!-- LIGHTBOX -->
 <div id="lightbox">
-
     <span id="closeLightboxBtn">&times;</span>
-
-    <img id="lightboxImage"
-         src=""
-         alt="Gallery Image">
-
+    <img id="lightboxImage">
 </div>
 
+<!-- JS -->
 <script src="script.js"></script>
 
 </body>
