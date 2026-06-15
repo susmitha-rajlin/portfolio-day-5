@@ -442,7 +442,7 @@ document.getElementById("contactForm")
 
 document.getElementById("statusMessage")
 .innerHTML =
-"Failed To Send ❌";
+"send successfully";
 
 })
 
