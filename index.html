@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Susmitha Rajlin Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+
+<header>
+    <h1>Susmitha Rajlin</h1>
+    <p>Full Stack Developer</p>
+
+    <div class="header-buttons">
+        <button onclick="changeMode()">🌙 Dark Mode</button>
+        <button onclick="toggleMenu()">☰ Menu</button>
+    </div>
+
+    <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#todo">To-Do</a></li>
+        <li><a href="#weather">Weather</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+
+
+<section id="home">
+    <h2>Welcome</h2>
+    <p>
+        Welcome to my personal portfolio website.
+        Here you can explore my skills, projects and activities.
+    </p>
+</section>
+
+
+
+<section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I am interested in Web Development and Artificial Intelligence.
+        I enjoy building websites and learning new technologies.
+    </p>
+</section>
+
+
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-card">
+            <h3>HTML</h3>
+            <div class="bar">
+                <div class="fill" data-width="90%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>CSS</h3>
+            <div class="bar">
+                <div class="fill" data-width="85%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>JavaScript</h3>
+            <div class="bar">
+                <div class="fill" data-width="80%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Tailwind CSS</h3>
+            <div class="bar">
+                <div class="fill" data-width="75%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>React</h3>
+            <div class="bar">
+                <div class="fill" data-width="70%"></div>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <h3>Node.js</h3>
+            <div class="bar">
+                <div class="fill" data-width="65%"></div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section id="projects">
+
+    <h2>Projects</h2>
+
+    <div class="filter-buttons">
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('frontend')">Frontend</button>
+        <button onclick="filterProjects('backend')">Backend</button>
+        <button onclick="filterProjects('ai')">AI</button>
+    </div>
+
+    <div class="projects-container">
+
+        
+
+        <div class="project frontend">
+
+            <img src="https://via.placeholder.com/300x180"
+                 alt="Landing Page">
+
+            <h3>Landing Page</h3>
+
+            <p>Responsive Website Design</p>
+
+            <button class="viewProject"
+                    data-title="Landing Page"
+                    data-image="https://via.placeholder.com/500x250"
+                    data-desc="Responsive Landing Page built using HTML and CSS."
+                    data-tech="HTML, CSS"
+                    data-link="https://example.com">
+
+                
+
+            </button>
+
+        </div>
+
+        
+
+        <div class="project backend">
+
+            <img src="https://via.placeholder.com/300x180"
+                 alt="Student Management">
+
+            <h3>Student Management</h3>
+
+            <p>CRUD Application</p>
+
+            <button class="viewProject"
+                    data-title="Student Management"
+                    data-image="https://via.placeholder.com/500x250"
+                    data-desc="Student Management System using JavaScript."
+                    data-tech="HTML, CSS, JavaScript"
+                    data-link="https://example.com">
+
+                
+
+            </button>
+
+        </div>
+
+        
+
+        <div class="project ai">
+
+            <img src="https://via.placeholder.com/300x180"
+                 alt="AI Chatbot">
+
+            <h3>AI Chatbot</h3>
+
+            <p>Basic AI Assistant</p>
+
+            <button class="viewProject"
+                    data-title="AI Chatbot"
+                    data-image="https://via.placeholder.com/500x250"
+                    data-desc="Simple AI Chatbot project."
+                    data-tech="AI, JavaScript"
+                    data-link="https://example.com">
+
+            
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="testimonials">
+
+    <h2>Testimonials</h2>
+
+    <div class="testimonial">
+
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya">
+
+        <h3>Priya</h3>
+
+        <p>Frontend Developer</p>
+
+        <p>Excellent work and great attention to detail.</p>
+
+    </div>
+
+    <div class="testimonial">
+
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Arun">
+
+        <h3>Arun</h3>
+
+        <p>UI Designer</p>
+
+        <p>Creative and hardworking developer.</p>
+
+    </div>
+
+    <div class="testimonial">
+
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Divya">
+
+        <h3>Divya</h3>
+
+        <p>Project Manager</p>
+
+        <p>Always completes tasks on time.</p>
+
+    </div>
+
+</section>
+
+<section id="gallery">
+
+</section>
+
+<section id="todo">
+
+    <h2>My To-Do List</h2>
+
+    <input type="text"
+           id="taskInput"
+           placeholder="Add New Task">
+
+    <button id="addBtn">
+        
+    </button>
+
+    <ul id="taskList"></ul>
+
+    <p id="taskCount"></p>
+
+</section>
+
+
+
+<section id="weather">
+
+    <h2>Live Weather</h2>
+
+    <input type="text"
+           id="cityInput"
+           placeholder="Enter City Name">
+
+    <button id="getWeatherBtn">
+        
+    </button>
+
+    <div id="loading" class="spinner"></div>
+    <div id="weatherResult">
+
+        <h3 id="cityName"></h3>
+
+        <p id="temp"></p>
+
+        <p id="description"></p>
+
+        <p id="humidity"></p>
+
+    </div>
+
+</section>
+
+
+
+<section id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input type="text"
+               id="name"
+               placeholder="Your Name"
+               required>
+
+        <input type="email"
+               id="email"
+               placeholder="Your Email"
+               required>
+
+        <textarea id="message"
+                  rows="5"
+                  placeholder="Your Message"
+                  required></textarea>
+
+       <button type="submit" id="submitBtn">
+    Send Message
+</button>
+        <p id="statusMessage"></p>
+
+    </form>
+
+</section>
+
+
+
+<footer>
+
+    <p id="clock"></p>
+
+</footer>
+
+
+
+<button id="topBtn">
+    
+</button>
+
+
+
+<div id="projectModal" class="modal">
+
+    <div class="modal-content">
+
+        <span id="closeModal">&times;</span>
+
+        <h2 id="modalTitle"></h2>
+
+        <img id="modalImage"
+             src=""
+             alt="Project Image">
+
+        <p id="modalDesc"></p>
+
+        <p id="modalTech"></p>
+
+        <a id="modalLink"
+           href="#"
+           target="_blank">
+
+            
+
+        </a>
+
+    </div>
+
+</div>
+<div id="lightbox">
+
+    <span id="closeLightboxBtn">&times;</span>
+
+    <img id="lightboxImage"
+         src=""
+         alt="Gallery Image">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
